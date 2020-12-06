@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
         moveToBoard();
         moveToMypage();
+
+        moveToSearch();
     }
 
     public void setScrollViewFocus(){
@@ -73,6 +75,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+
+    public void moveToSearch(){
+        RelativeLayout button = findViewById(R.id.main_act_search_btn);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), SearchDramaActivity.class);
+                startActivity(intent);
+            }
+        });
+    }
 
     // 뒤로 가기 버튼 두 번 눌러야 종료되게
     private long time = 0;
