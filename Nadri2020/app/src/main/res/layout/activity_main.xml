@@ -1,18 +1,337 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<!--민승-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#ffffff"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--상단바-->
+    <RelativeLayout
+        android:id="@+id/main_act_bar_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#E4E4E4">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <!--이미지:프로필-->
+        <RelativeLayout
+            android:id="@+id/main_act_profile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingVertical="5dp"
+                android:src="@drawable/ic_mainview_profile" />
+
+        </RelativeLayout>
+
+        <!--로고-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_top_main"/>
+
+        <!--버튼:검색-->
+        <RelativeLayout
+            android:id="@+id/main_act_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--하단바-->
+    <RelativeLayout
+        android:id="@+id/main_act_bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#E4E4E4"
+        android:layout_height="56dp">
+
+        <!--나의 기록-->
+        <RelativeLayout
+            android:id="@+id/main_act_home_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="나의 기록" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/ic_bottom_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bottom_home" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--톡 게시판-->
+        <RelativeLayout
+            android:id="@+id/main_act_board_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="톡 게시판" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_bottom_chat"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--마이페이지-->
+        <RelativeLayout
+            android:id="@+id/main_act_mypage_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="마이페이지" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bottom_user" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <!--나의 기록-->
+    <RelativeLayout
+        android:id="@+id/main_act_layout_myrecord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="24dp"
+        android:layout_below="@+id/main_act_bar_top">
+
+        <TextView
+            style="@style/CustomeTextView_Color16dp"
+            android:id="@+id/main_act_text_myrecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="나의 기록" />
+
+        <TextView
+            style="@style/CustomeTextView_Color15dp"
+            android:id="@+id/main_act_text_myrecord_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/main_act_text_myrecord"
+            android:text="(3)" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/main_scrollView_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="14dp"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/main_act_layout_myrecord">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <!--학기중 최종발표용 임시 이미지-->
+            <ImageView
+                android:id="@+id/main_act_thumbnail_img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_thumbnail" />
+
+            <ImageView
+                android:id="@+id/main_act_thumbnail_img_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/img_thumbnail" />
+
+            <ImageView
+                android:id="@+id/main_act_thumbnail_img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/img_thumbnail" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_item_main_record"
+                android:layout_width="match_parent"
+                android:layout_height="148dp"
+                android:scrollbars="horizontal">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+    <!--작품 추천-->
+    <RelativeLayout
+        android:id="@+id/main_act_layout_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="24dp"
+        android:layout_below="@+id/main_scrollView_my">
+
+        <TextView
+            style="@style/CustomeTextView_Color16dp"
+            android:id="@+id/main_act_text_recommend_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808080"
+            android:textSize="16dp"
+            android:text="#배우이름" />
+
+        <TextView
+            style="@style/CustomeTextView_Color16dp"
+            android:id="@+id/main_act_text_recommend_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/main_act_text_recommend_1"
+            android:text="#드라마제목" />
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:id="@+id/main_scrollView_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="14dp"
+        android:fadeScrollbars="false"
+        android:layout_below="@+id/main_act_layout_recommend">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <!--학기중 최종발표용 임시 이미지-->
+            <ImageView
+                android:id="@+id/main_act_thumbnail_rec_img_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_thumbnail" />
+
+            <ImageView
+                android:id="@+id/main_act_thumbnail_rec_img_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/img_thumbnail" />
+
+            <ImageView
+                android:id="@+id/main_act_thumbnail_rec_img_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:src="@drawable/img_thumbnail" />
+
+            <!--리사이클러뷰
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rv_item_main_record"
+                            android:layout_width="match_parent"
+                            android:layout_height="148dp"
+                            android:scrollbars="horizontal">
+
+                        </androidx.recyclerview.widget.RecyclerView>
+            -->
+
+        </LinearLayout>
+
+
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>
