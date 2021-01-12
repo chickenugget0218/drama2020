@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a4d2139-810a-4752-b03d-130104b1c665" name="Default Changelist" comment="20210112">
+      <change beforePath="$PROJECT_DIR$/Nadri2020/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/androidTest/java/com/example/nadri2020/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/BoardActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/LoginActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/MainAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/MypageActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/OnMainRecordClickListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/RecordDramaActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/SearchDramaActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/SplashActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/WriteDramaActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/java/com/example/nadri2020/data/MainRecordData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/anim/slide_in_left.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/anim/slide_in_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/anim/slide_out_left.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/anim/slide_out_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/btn__setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/btn_edit_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/btn_mypage_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/btn_share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/btn_undo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/btn_undo_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_boardview_stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_boardview_unwatched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_boardview_userimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_boardview_watched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_boardview_watching.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_bottom_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_bottom_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_bottom_user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_box_checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_box_unchecked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_mainview_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_recordview_like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/ic_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/img_recordview_drama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/img_recordview_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/img_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/logo_splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/logo_splash_nadri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/logo_top_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-hdpi/recordview_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/btn__setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/btn_edit_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/btn_mypage_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/btn_share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/btn_undo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/btn_undo_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_boardview_stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_boardview_unwatched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_boardview_userimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_boardview_watched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_boardview_watching.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_bottom_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_bottom_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_bottom_user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_box_checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_box_unchecked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_mainview_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_recordview_like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/ic_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/img_recordview_drama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/img_recordview_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/img_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/logo_splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/logo_splash_nadri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/logo_top_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-ldpi/recordview_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/btn__setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/btn_edit_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/btn_mypage_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/btn_share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/btn_undo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/btn_undo_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_boardview_stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_boardview_unwatched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_boardview_userimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_boardview_watched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_boardview_watching.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_bottom_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_bottom_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_bottom_user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_box_checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_box_unchecked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_mainview_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_recordview_like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/ic_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/img_recordview_drama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/img_recordview_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/img_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/logo_splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/logo_splash_nadri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/logo_top_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-mdpi/recordview_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/btn__setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/btn_edit_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/btn_mypage_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/btn_share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/btn_undo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/btn_undo_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_boardview_stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_boardview_unwatched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_boardview_userimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_boardview_watched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_boardview_watching.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_bottom_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_bottom_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_bottom_user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_box_checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_box_unchecked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_mainview_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_recordview_like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/ic_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/img_recordview_drama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/img_recordview_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/img_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/logo_splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/logo_splash_nadri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/logo_top_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xhdpi/recordview_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/btn__setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/btn_edit_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/btn_mypage_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/btn_share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/btn_undo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/btn_undo_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_boardview_stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_boardview_unwatched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_boardview_userimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_boardview_watched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_boardview_watching.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_bottom_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_bottom_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_bottom_user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_box_checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_box_unchecked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_mainview_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_recordview_like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/ic_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/img_recordview_drama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/img_recordview_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/img_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/logo_splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/logo_splash_nadri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/logo_top_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxhdpi/recordview_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/btn__setting.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/btn_edit_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/btn_mypage_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/btn_share.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/btn_undo_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/btn_undo_line.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_boardview_stop.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_boardview_unwatched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_boardview_userimg.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_boardview_watched.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_boardview_watching.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_bottom_chat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_bottom_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_bottom_user.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_box_checked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_box_unchecked.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_mainview_profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_recordview_like.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/ic_search.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/img_recordview_drama.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/img_recordview_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/img_thumbnail.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/logo_splash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/logo_splash_nadri.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/logo_top_main.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable-xxxhdpi/recordview_edit.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable/custom_round_rectangle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable/custom_round_rectangle_accent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable/custom_round_rectangle_gray.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable/custom_round_rectangle_stroke.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/font/nanumbarungothic.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/font/nanumbarungothic_normal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/font/nanumbarungothicbold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/font/nanumbarungothicbold_normal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/font/nanumbarungothiclight.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/font/nanumbarungothiclight_normal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/font/nanumbarungothicultralight.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/font/nanumbarungothicultralight_normal.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/activity_board.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/activity_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/activity_mypage.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/activity_record_drama.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/activity_search_drama.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/activity_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/activity_write_drama.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/rv_item_board_drama.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/rv_item_main_record.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/rv_item_record_list.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/layout/rv_item_search_drama.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/app/src/test/java/com/example/nadri2020/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Nadri2020/settings.gradle" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Q_Pixel_2_]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="layoutResourceFile" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1lQ9LfytXcHHhjAUNVGdAKr0MSD" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="ce10171a0da9cf38047e" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2021-01-12T06:09:48.211Z" />
+    <property name="ResourceManagerPrefKey.ResourceType" value="LAYOUT" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pengung\AndroidStudioProjects\Nadri2020\app\src\main\res\values" />
+    </key>
+    <key name="android.template.1489668026">
+      <recent name="com.example.nadri2020" />
+      <recent name="com.example.nadri2020.data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="Nadri2020.app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1a4d2139-810a-4752-b03d-130104b1c665" name="Default Changelist" comment="" />
+      <created>1607518393432</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607518393432</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="20210112" />
+    <option name="LAST_COMMIT_MESSAGE" value="20210112" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="855" y="235" key="#com.intellij.ide.util.MemberChooser" timestamp="1610427820724">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="855" y="235" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1610427820724" />
+    <state x="549" y="279" width="555" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1610425660393">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="279" width="555" height="274" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1610425660393" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1610439771588">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1610439771588" />
+    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1610460104079">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610460104079" />
+    <state width="1491" height="148" key="GridCell.Tab.0.bottom" timestamp="1610439225364">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="148" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610439225364" />
+    <state width="1491" height="148" key="GridCell.Tab.0.center" timestamp="1610439225364">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="148" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610439225364" />
+    <state width="1491" height="148" key="GridCell.Tab.0.left" timestamp="1610439225363">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="148" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610439225363" />
+    <state width="1491" height="148" key="GridCell.Tab.0.right" timestamp="1610439225364">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="148" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610439225364" />
+    <state x="510" y="45" key="SettingsEditor" timestamp="1610349263055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="510" y="45" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610349263054" />
+    <state x="575" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610459876793">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="575" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1610459876793" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610427488323">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610427488323" />
+  </component>
+</project>
