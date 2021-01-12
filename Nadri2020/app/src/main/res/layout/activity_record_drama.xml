@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--민승-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".RecordDramaActivity">
+
+    <!--상단바-->
+    <RelativeLayout
+        android:id="@+id/record_act_bar_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#E4E4E4">
+
+        <!--버튼:뒤로 가기-->
+        <RelativeLayout
+            android:id="@+id/record_act_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingVertical="5dp"
+                android:src="@drawable/btn_undo_line" />
+
+        </RelativeLayout>
+
+        <!--로고-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_top_main"/>
+
+
+    </RelativeLayout>
+
+    <!--하단바-->
+    <RelativeLayout
+        android:id="@+id/main_act_bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="#E4E4E4"
+        android:layout_height="56dp">
+
+        <!--나의 기록-->
+        <RelativeLayout
+            android:id="@+id/main_act_record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="나의 기록" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:id="@+id/ic_bottom_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bottom_home" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--톡 게시판-->
+        <RelativeLayout
+            android:id="@+id/main_act_board_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="톡 게시판" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_bottom_chat"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--마이페이지-->
+        <RelativeLayout
+            android:id="@+id/main_act_mypage_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="마이페이지" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bottom_user" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <!--이미지:드라마 썸네일-->
+    <RelativeLayout
+        android:id="@+id/record_act_layout_drama_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/record_act_bar_top">
+
+        <ImageView
+            android:id="@+id/record_act_drama_img"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/img_recordview_drama" />
+
+        <!--텍스트:드라마 정보-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:background="#B3FFFFFF"
+            android:layout_alignBottom="@+id/record_act_drama_img">
+
+            <TextView
+                android:id="@+id/search_act_drama_name_text"
+                style="@style/CustomeTextView_Color15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="스타트업" />
+
+            <!--
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_below="@+id/search_act_drama_name_text"
+                android:text="2020.xx.xx" /> -->
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <!--기록한 드라마-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_item_record_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@id/record_act_layout_drama_img">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
