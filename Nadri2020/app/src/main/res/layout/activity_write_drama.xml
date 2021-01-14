@@ -49,12 +49,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_bottom_chat" />
-
         </RelativeLayout>
 
 
@@ -82,8 +76,8 @@
                 style="@style/CustomeTextView_Color13dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
                 android:text="나의 기록" />
 
             <RelativeLayout
@@ -118,6 +112,21 @@
                 android:layout_centerHorizontal="true"
                 android:layout_alignParentBottom="true"
                 android:text="톡 게시판" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_centerHorizontal="true">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bottom_chat"/>
+
+            </RelativeLayout>
+
 
         </RelativeLayout>
 
@@ -171,15 +180,17 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
 
+
             <Spinner
                 android:id="@+id/drama_num_spinner"
                 style="@style/CustomeTextView_Color15dp"
-                android:ems="10"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="31dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="3dp"
+                android:ems="10"
                 android:entries="@array/회차" />
 
             <TextView
@@ -187,42 +198,44 @@
                 style="@style/CustomeTextView_Color15dp"
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="13dp"
+                android:layout_marginTop="34dp"
                 android:ems="10"
                 android:text="n화" />
 
+
+            <!--시청 상태-->
 
 
             <Button
                 android:id="@+id/date_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="OnClickHandler"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="58dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="63dp"
+                android:onClick="OnClickHandler"
                 android:text="날짜 입력 버튼" />
 
             <TextView
                 android:id="@+id/write_act_date_pickup_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="33dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="32dp"
                 android:layout_toRightOf="@id/write_act_drama_num_text"
                 android:text="날짜 정보" />
-
-
-
-            <!--시청 상태-->
-
-
 
             <RelativeLayout
                 android:id="@+id/write_act_layout_box"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="15dp"
                 android:layout_below="@id/date_button">
 
                 <ToggleButton
@@ -278,7 +291,7 @@
                 android:layout_height="wrap_content"
                 android:minHeight="200dp"
                 android:layout_below="@+id/write_act_layout_box"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="15dp"
                 android:background="@drawable/custom_round_rectangle_stroke"
                 android:layout_marginBottom="80dp">
 
@@ -289,7 +302,7 @@
                     android:paddingHorizontal="12dp"
                     android:paddingVertical="10dp"
                     android:background="@android:color/transparent"
-                    android:text="리뷰 작성하기" />
+                    android:hint="리뷰를 작성하세요." />
 
             </RelativeLayout>
 

@@ -796,6 +796,7 @@ id add_drama_back
 id add_drama_name
 id add_drama_new
 id add_gallery_btn
+id add_review_write
 id alertTitle
 id all
 id always
@@ -855,6 +856,7 @@ id info
 id invisible
 id italic
 id item_touch_helper_previous_elevation
+id iv_back_bt
 id iv_dramaGallery
 id left
 id line1

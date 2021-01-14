@@ -7,6 +7,43 @@
     android:orientation="vertical"
     tools:context=".AddDramaRecord">
 
+    <!--상단바-->
+    <RelativeLayout
+        android:id="@+id/record_act_bar_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#E4E4E4">
+
+        <!--버튼:뒤로 가기-->
+        <RelativeLayout
+            android:id="@+id/record_act_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:id="@+id/iv_back_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingVertical="5dp"
+                android:src="@drawable/btn_undo_line" />
+
+        </RelativeLayout>
+
+        <!--로고-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_top_main"/>
+
+
+    </RelativeLayout>
+
     <!-- 텍스트:드라마 제목 설정 -->
     <EditText
         android:id="@+id/add_drama_name"
@@ -14,18 +51,21 @@
         android:layout_height="wrap_content"
         android:hint="드라마 제목을 입력하세요."
         android:textSize="25dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:layout_gravity="center"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="91dp" />
 
     <Button
         android:id="@+id/add_gallery_btn"
-        android:layout_marginTop="20dp"
+        style="@style/CustomeTextView_Color13dp"
+        android:layout_marginTop="25dp"
+        android:layout_width="108dp"
+        android:layout_height="34dp"
         android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:background="@drawable/custom_round_rectangle_accent"
         android:text="사진 불러오기"
+        android:textColor="#FFFFFF"
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="155dp" />
 

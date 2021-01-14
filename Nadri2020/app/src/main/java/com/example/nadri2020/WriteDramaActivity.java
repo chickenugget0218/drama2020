@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.DatePicker;
+import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -58,6 +60,8 @@ public class WriteDramaActivity extends AppCompatActivity {
 
         this.InitializeView();
         this.InitializeListener();
+
+        iv_back();
     }
 
     private void showcwriteMessage() {
@@ -141,6 +145,18 @@ public class WriteDramaActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    //뒤로가기 버튼
+    public void iv_back(){
+        ImageView go_main = findViewById(R.id.iv_back_bt);
 
+        go_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),RecordDramaActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
 
 }

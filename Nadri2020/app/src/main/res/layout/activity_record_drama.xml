@@ -28,6 +28,7 @@
             android:padding="6dp">
 
             <ImageView
+                android:id="@+id/iv_back_bt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -202,14 +203,38 @@
 
 
     <!--기록한 드라마-->
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_item_record_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        android:layout_below="@id/record_act_layout_drama_img">
+        android:layout_width="413dp"
+        android:layout_height="459dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="272dp"
+        android:scrollbars="vertical">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_below="@+id/record_act_layout_drama_img"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="-1dp"
+        android:layout_marginTop="-1dp"
+        android:layout_marginBottom="460dp">
+
+        <Button
+            android:id="@+id/add_review_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="2dp"
+            android:text="회차 추가하기" />
+    </RelativeLayout>
 
 
 </RelativeLayout>

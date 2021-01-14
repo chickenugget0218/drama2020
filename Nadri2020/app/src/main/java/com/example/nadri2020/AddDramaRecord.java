@@ -2,6 +2,7 @@ package com.example.nadri2020;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.AppCompatButton;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -28,11 +29,12 @@ public class AddDramaRecord extends AppCompatActivity {
     Dialog dialog;
 
     //이미지뷰
-    private ImageView iv;
+    ImageView iv;
     Button gallery_btn;
     Button drama_new; //확인 버튼
     Button drama_back;
-    EditText add_drama_name; //드라마 제목
+
+    EditText drama_name; //드라마 제목
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,8 @@ public class AddDramaRecord extends AppCompatActivity {
         gallery_btn = findViewById(R.id.add_gallery_btn);
         drama_new = findViewById(R.id.add_drama_new);
         drama_back = findViewById(R.id.add_drama_back);
+        drama_name = findViewById(R.id.add_drama_name);
+
 
         //이미지뷰 클릭시
         gallery_btn.setOnClickListener(new View.OnClickListener() {
@@ -83,7 +87,26 @@ public class AddDramaRecord extends AppCompatActivity {
             }
         });
 
+        //뒤로가기 버튼
+        iv_back();
+
+
     }
+
+    //뒤로가기 버튼
+    public void iv_back(){
+        ImageView go_main = findViewById(R.id.iv_back_bt);
+
+        go_main.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(),MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
 
     //이미지 결과
     @Override
@@ -148,6 +171,9 @@ public class AddDramaRecord extends AppCompatActivity {
 
         builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogInterface, int which) {
+                //0114추가부분
+                drama_name.setText(""); //텍스트뷰 내용 삭제
+                iv.setImageResource(0); //이미지뷰 내용 삭제
             }
         });
 
