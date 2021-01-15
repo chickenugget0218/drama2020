@@ -3,6 +3,7 @@ package com.example.nadri2020;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatButton;
+import androidx.core.app.ActivityCompat;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
@@ -20,20 +21,22 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
+
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 
 public class AddDramaRecord extends AppCompatActivity {
     private static final int REQUEST_CODE = 1;
 
-    //다이얼로그
-    Dialog dialog;
-
     //이미지뷰
     ImageView iv;
+    ImageView iv_result;
     Button gallery_btn;
     Button drama_new; //확인 버튼
     Button drama_back;
-
+    Bitmap img;
     EditText drama_name; //드라마 제목
 
     @Override
@@ -62,15 +65,6 @@ public class AddDramaRecord extends AppCompatActivity {
             }
         });
 
-        //확인버튼 클릭시 커스텀 다이얼로그 띄우기
-        drama_new.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                showDialog();
-            }
-        });
-
-
         Button buttoncancel = findViewById(R.id.add_drama_back);
         buttoncancel.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -89,7 +83,6 @@ public class AddDramaRecord extends AppCompatActivity {
 
         //뒤로가기 버튼
         iv_back();
-
 
     }
 
@@ -118,10 +111,19 @@ public class AddDramaRecord extends AppCompatActivity {
                 try {
                     // 선택한 이미지에서 비트맵 생성
                     InputStream in = getContentResolver().openInputStream(data.getData());
-                    Bitmap img = BitmapFactory.decodeStream(in);
+                    img = BitmapFactory.decodeStream(in);
                     in.close();
                     // 이미지 표시
                     iv.setImageBitmap(img);
+                    //Uri uri = data.getData();    //사진 경로, 라이브러리 사용
+                    //Glide.with(this).load(uri.toString()).into(iv);
+
+                    //임시
+
+                    //showcwriteMessage();
+                    //액티비티 전환: 제목,이미지넘김
+
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -129,10 +131,6 @@ public class AddDramaRecord extends AppCompatActivity {
         }
     }
 
-    //dialog함수
-    public void showDialog(){
-   //     dialog.show();
-    }
 
 
     private void showcwriteMessage() {
@@ -143,6 +141,14 @@ public class AddDramaRecord extends AppCompatActivity {
 
         builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogInterface, int which) {
+
+                Intent intent = new Intent(getApplicationContext(),RecordDramaActivity.class);
+                ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                img.compress(Bitmap.CompressFormat.PNG,40,stream);
+                byte[] byteArray = stream.toByteArray();
+                intent.putExtra("image",byteArray);
+                startActivity(intent);
+
             }
         });
 
@@ -173,7 +179,7 @@ public class AddDramaRecord extends AppCompatActivity {
             public void onClick(DialogInterface dialogInterface, int which) {
                 //0114추가부분
                 drama_name.setText(""); //텍스트뷰 내용 삭제
-                iv.setImageResource(0); //이미지뷰 내용 삭제
+                iv.setImageResource(R.drawable.img_recordview_drama); //이미지뷰 내용 삭제
             }
         });
 
