@@ -63,117 +63,6 @@
 
     </RelativeLayout>
 
-    <!--하단바-->
-    <RelativeLayout
-        android:id="@+id/main_act_bar_bottom"
-        android:layout_width="match_parent"
-        android:layout_alignParentBottom="true"
-        android:background="#E4E4E4"
-        android:layout_height="56dp">
-
-        <!--나의 기록-->
-        <RelativeLayout
-            android:id="@+id/main_act_home_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="30dp"
-            android:padding="6dp">
-
-            <TextView
-                style="@style/CustomeTextView_Color13dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                android:text="나의 기록" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:layout_centerHorizontal="true">
-
-                <ImageView
-                    android:id="@+id/ic_bottom_home"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_bottom_home" />
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-        <!--톡 게시판-->
-        <RelativeLayout
-            android:id="@+id/main_act_board_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:padding="6dp">
-
-            <TextView
-                style="@style/CustomeTextView_Color13dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                android:text="톡 게시판" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:layout_centerHorizontal="true">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerInParent="true"
-                    android:src="@drawable/ic_bottom_chat"/>
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-        <!--마이페이지-->
-        <RelativeLayout
-            android:id="@+id/main_act_mypage_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="26dp"
-            android:padding="6dp">
-
-            <TextView
-                style="@style/CustomeTextView_Color13dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_alignParentBottom="true"
-                android:text="마이페이지" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp"
-                android:layout_centerHorizontal="true">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
-                    android:src="@drawable/ic_bottom_user" />
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-    </RelativeLayout>
-
 
     <!--리뷰가 보고 싶을 때-->
     <RelativeLayout
@@ -193,54 +82,36 @@
     </RelativeLayout>
 
 
-    <LinearLayout
-        android:id="@+id/board_act_layout_drama_img"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="14dp"
-        android:layout_below="@+id/board_act_layout_top">
-
-        <!--학기중 최종발표용 임시 이미지-->
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <ImageView
-                android:id="@+id/board_act_thumbnail_img_1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:src="@drawable/img_thumbnail" />
-
-            <ImageView
-                android:id="@+id/board_act_thumbnail_img_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:src="@drawable/img_thumbnail" />
-
-            <ImageView
-                android:id="@+id/board_act_thumbnail_img_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:src="@drawable/img_thumbnail" />
-
-        </RelativeLayout>
-
-    </LinearLayout>
-
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_board_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/board_act_layout_drama_img"
+        android:layout_below="@id/board_act_bar_top"
         android:layout_margin="16dp">
 
     </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:menu="@menu/menu_bottom" />
+
+    <FrameLayout
+        android:id="@+id/frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="56dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottom_navigation_view" />
+
 
 
 

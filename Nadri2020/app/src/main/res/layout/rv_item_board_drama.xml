@@ -1,50 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <!--민승-->
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rv_board"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:gravity="center"
+    android:orientation="vertical">
 
-    <RelativeLayout
+    <ImageView
+        android:id="@+id/rv_item_board_thumbnail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        android:src="@drawable/img_thumbnail" />
+
+    <TextView
+        android:id="@+id/rv_item_board_thumbnail_text"
+        style="@style/CustomeTextView_Color15dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:background="#909090"
+        android:textAlignment="center"
+        android:layout_alignStart="@+id/rv_item_main_thumbnail"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/rv_item_main_thumbnail_text"
+        android:text="봄밤" />
 
-        <ImageView
-            android:id="@+id/rv_item_main_thumbnail"
-            android:layout_centerHorizontal="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/img_thumbnail" />
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="28dp"
-            android:layout_centerHorizontal="true"
-            android:layout_alignBottom="@+id/rv_item_main_thumbnail">
-
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#909090">
-
-                <TextView
-                    android:id="@+id/rv_item_main_thumbnail_text"
-                    style="@style/CustomeTextView_Color15dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_centerVertical="true"
-                    android:textColor="#FFFFFF"
-                    android:text="봄밤" />
-
-            </RelativeLayout>
-
-
-        </RelativeLayout>
-
-    </RelativeLayout>
 
 </LinearLayout>
