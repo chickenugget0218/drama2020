@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--상단바-->
+    <RelativeLayout
+        android:id="@+id/main_act_bar_top"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="#E4E4E4">
+
+        <!--이미지:프로필-->
+        <RelativeLayout
+            android:id="@+id/main_act_profile_img"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingVertical="5dp"
+                android:src="@drawable/ic_mainview_profile" />
+
+        </RelativeLayout>
+
+        <!--로고-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/logo_top_main"/>
+
+        <!--버튼:검색-->
+        <RelativeLayout
+            android:id="@+id/main_act_search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="6dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_search" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/board_scrollView_my"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="14dp"
+        android:fadeScrollbars="false">
+
+        <!-- 리사이클러뷰 추가, 추가버튼누르면 추가할것-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_board_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            tools:listitem="@layout/rv_item_board_drama">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+</FrameLayout>
