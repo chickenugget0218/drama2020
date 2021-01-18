@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--상단바-->
+        <RelativeLayout
+            android:id="@+id/main_act_bar_top"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#E4E4E4">
+
+            <!--이미지:프로필-->
+            <RelativeLayout
+                android:id="@+id/main_act_profile_img"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:paddingVertical="5dp"
+                    android:src="@drawable/ic_mainview_profile" />
+
+            </RelativeLayout>
+
+            <!--로고-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo_top_main" />
+
+            <!--버튼:검색-->
+            <RelativeLayout
+                android:id="@+id/main_act_search_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:padding="6dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_search" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--나의 기록-->
+        <RelativeLayout
+            android:id="@+id/main_act_layout_myrecord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/main_act_bar_top"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/main_act_text_myrecord"
+                    style="@style/CustomeTextView_Color16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="나의 기록" />
+
+                <TextView
+                    android:id="@+id/main_act_text_myrecord_num"
+                    style="@style/CustomeTextView_Color15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@id/main_act_text_myrecord"
+                    android:text="(3)" />
+
+                <!-- 버튼추가 !-->
+                <Button
+                    android:id="@+id/review_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="추가" />
+
+                <Button
+                    android:id="@+id/main_act_search_review"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="리뷰작성" />
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+        <!--
+                <ScrollView
+                    android:id="@+id/main_scrollView_my"
+                    android:fillViewport="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/main_act_layout_myrecord"
+                    android:fadeScrollbars="false"
+                    android:background="#f1f1d1"
+                    android:paddingVertical="14dp">
+
+
+
+                </ScrollView>
+                 -->
+
+    </RelativeLayout>
+
+    <!-- 리사이클러뷰 추가, 추가버튼누르면 추가할것-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_item_main_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="120dp"
+        android:orientation="vertical"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/rv_item_main_record">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</FrameLayout>
