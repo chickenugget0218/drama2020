@@ -7,7 +7,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff">
+    android:background="#ffffff"
+    tools:context=".WriteDramaActivity">
 
     <!--상단바-->
     <RelativeLayout
@@ -44,12 +45,108 @@
 
     </RelativeLayout>
 
+    <!--하단바-->
+    <RelativeLayout
+        android:id="@+id/main_act_bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:background="#E4E4E4">
+
+        <!--나의 기록-->
+        <RelativeLayout
+            android:id="@+id/main_act_record_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="나의 기록" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp">
+
+                <ImageView
+                    android:id="@+id/ic_bottom_home"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_bottom_home" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <!--톡 게시판-->
+        <RelativeLayout
+            android:id="@+id/main_act_board_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="톡 게시판" />
+
+        </RelativeLayout>
+
+        <!--마이페이지-->
+        <RelativeLayout
+            android:id="@+id/main_act_mypage_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="26dp"
+            android:padding="6dp">
+
+            <TextView
+                style="@style/CustomeTextView_Color13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="마이페이지" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="2dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_bottom_user" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
 
 
     <!--작성란-->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/write_act_bar_top"
         android:layout_marginHorizontal="16dp"
         android:paddingTop="16dp">
@@ -93,21 +190,22 @@
                 -->
 
             <ImageView
+                android:layout_toRightOf="@id/write_act_drama_num_text"
                 android:id="@+id/date_button"
                 android:layout_width="wrap_content"
-                android:layout_height="20dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:paddingHorizontal="8dp"
-                android:layout_marginLeft="70dp"
+                android:paddingHorizontal="20dp"
                 android:onClick="OnClickHandler"
                 android:src="@drawable/ic_calendar" />
 
             <TextView
+                android:layout_toRightOf="@+id/date_button"
                 android:id="@+id/write_act_date_pickup_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_toRightOf="@id/date_button"
                 android:text="날짜 정보" />
+
 
             <!--시청 상태-->
 
@@ -173,6 +271,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/write_act_layout_box"
                 android:layout_marginTop="12dp"
+                android:layout_marginBottom="80dp"
                 android:background="@drawable/custom_round_rectangle_stroke"
                 android:minHeight="200dp">
 
@@ -188,7 +287,6 @@
             </RelativeLayout>
 
         </RelativeLayout>
-
 
         <!--버튼:확인 취소-->
         <RelativeLayout

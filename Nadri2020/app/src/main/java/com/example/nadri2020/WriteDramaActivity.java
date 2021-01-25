@@ -61,7 +61,7 @@ public class WriteDramaActivity extends AppCompatActivity {
         this.InitializeView();
         this.InitializeListener();
 
-        iv_back();
+        //iv_back();
     }
 
     private void showcwriteMessage() {
