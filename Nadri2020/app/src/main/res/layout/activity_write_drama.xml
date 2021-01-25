@@ -43,20 +43,6 @@
             android:layout_centerInParent="true"
             android:src="@drawable/logo_top_main" />
 
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp">
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:src="@drawable/ic_bottom_chat" />
-
-        </RelativeLayout>
-
-
     </RelativeLayout>
 
     <!--하단바-->
@@ -204,21 +190,20 @@
                 -->
 
             <ImageView
+                android:layout_toRightOf="@id/write_act_drama_num_text"
                 android:id="@+id/date_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
                 android:paddingHorizontal="20dp"
-                android:layout_toRightOf="@+id/write_act_date_pickup_btn"
                 android:onClick="OnClickHandler"
                 android:src="@drawable/ic_calendar" />
 
             <TextView
+                android:layout_toRightOf="@+id/date_button"
                 android:id="@+id/write_act_date_pickup_btn"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="33dp"
-                android:layout_toRightOf="@id/write_act_drama_num_text"
                 android:text="날짜 정보" />
 
 
