@@ -161,14 +161,16 @@
     <!--이미지:드라마 썸네일-->
     <RelativeLayout
         android:id="@+id/record_act_layout_drama_img"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="150dp"
         android:layout_below="@id/record_act_bar_top">
 
         <ImageView
             android:id="@+id/record_act_drama_img"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="fitCenter"
+            android:layout_height="150dp"
             android:src="@drawable/img_recordview_drama" />
 
         <!--텍스트:드라마 정보-->

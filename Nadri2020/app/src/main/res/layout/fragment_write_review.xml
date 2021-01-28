@@ -99,7 +99,6 @@
                 android:layout_alignParentTop="true"
                 android:paddingHorizontal="8dp"
                 android:layout_marginLeft="70dp"
-                android:onClick="OnClickHandler"
                 android:src="@drawable/ic_calendar" />
 
             <TextView
@@ -179,6 +178,7 @@
                 android:minHeight="200dp">
 
                 <EditText
+                    android:id="@+id/comment_wrt"
                     style="@style/CustomeTextView_Color13dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

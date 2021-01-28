@@ -14,6 +14,7 @@ import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -38,6 +39,8 @@ public class AddDramaRecord extends AppCompatActivity {
     Button drama_back;
     Bitmap img;
     EditText drama_name; //드라마 제목
+    Uri uri;
+    EditText drama_gerne; //드라마 장르
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,7 +55,7 @@ public class AddDramaRecord extends AppCompatActivity {
         drama_new = findViewById(R.id.add_drama_new);
         drama_back = findViewById(R.id.add_drama_back);
         drama_name = findViewById(R.id.add_drama_name);
-
+        drama_gerne = findViewById(R.id.drama_genre);
 
         //이미지뷰 클릭시
         gallery_btn.setOnClickListener(new View.OnClickListener() {
@@ -109,20 +112,14 @@ public class AddDramaRecord extends AppCompatActivity {
             // Make sure the request was successful
             if (resultCode == RESULT_OK) {
                 try {
+                    uri = data.getData();
                     // 선택한 이미지에서 비트맵 생성
-                    InputStream in = getContentResolver().openInputStream(data.getData());
+                    //InputStream in = getContentResolver().openInputStream(data.getData());
+                    InputStream in = getContentResolver().openInputStream(uri);
                     img = BitmapFactory.decodeStream(in);
                     in.close();
                     // 이미지 표시
                     iv.setImageBitmap(img);
-                    //Uri uri = data.getData();    //사진 경로, 라이브러리 사용
-                    //Glide.with(this).load(uri.toString()).into(iv);
-
-                    //임시
-
-                    //showcwriteMessage();
-                    //액티비티 전환: 제목,이미지넘김
-
 
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -134,21 +131,34 @@ public class AddDramaRecord extends AppCompatActivity {
 
 
     private void showcwriteMessage() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setMessage("리뷰를 등록하시겠습니까?\n");
 
 
         builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogInterface, int which) {
+                //드라마 제목, 장르, 이미지뷰가 비었을때
+                if (drama_name.getText().toString().equals("") || drama_gerne.getText().toString().equals("") || iv.getDrawable()==null) {
+                    //토스트 띄움
+                    Toast.makeText(getApplicationContext(),"제목과 장르, 이미지를 등록해주세요.",Toast.LENGTH_SHORT).show();
+                }
+                else if (drama_name.getText().toString().length() > 0 && drama_name.getText().length() > 0 && iv.getDrawable()!=null){
+                    //넘어가기 전에 다이얼로그로 입력한 정보 보여주면 좋을것같음 - 0128자영
 
-                Intent intent = new Intent(getApplicationContext(),RecordDramaActivity.class);
-                ByteArrayOutputStream stream = new ByteArrayOutputStream();
-                img.compress(Bitmap.CompressFormat.PNG,40,stream);
-                byte[] byteArray = stream.toByteArray();
-                intent.putExtra("image",byteArray);
-                startActivity(intent);
+                    Intent intent = new Intent(getApplicationContext(), RecordDramaActivity.class);
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    img.compress(Bitmap.CompressFormat.JPEG, 10, stream);
+                    byte[] byteArray = stream.toByteArray();
 
+                    //이미지 uri 전달, 제목 전달, 장르 전달
+                    Bundle bundle = new Bundle();
+                    intent.putExtra("uri", uri);
+                    intent.putExtra("title", drama_name.getText().toString());
+                    intent.putExtra("gerne", drama_gerne.getText().toString());
+                    startActivity(intent);
+                    finish();
+                }
             }
         });
 
@@ -177,8 +187,8 @@ public class AddDramaRecord extends AppCompatActivity {
 
         builder.setPositiveButton("예", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialogInterface, int which) {
-                //0114추가부분
                 drama_name.setText(""); //텍스트뷰 내용 삭제
+                drama_gerne.setText("");
                 iv.setImageResource(R.drawable.img_recordview_drama); //이미지뷰 내용 삭제
             }
         });
