@@ -2,25 +2,24 @@ package com.example.nadri2020;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
-import android.widget.HorizontalScrollView;
-import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.ScrollView;
 import android.widget.Toast;
 
-import com.example.nadri2020.data.MainRecordData;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -30,7 +29,7 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     //추가
-    private ArrayList<MainRecordData> arrayList;
+    private ArrayList<MainRecordItem> arrayList;
     private MainAdapter mainAdapter;
     private RecyclerView recyclerView;//그리드형식으로 표시
     private GridLayoutManager mGridLayoutManager;
@@ -39,53 +38,18 @@ public class MainActivity extends AppCompatActivity {
     private MainFragment mainFragment = new MainFragment();
     private BoardFragment boardFragment = new BoardFragment();
     private MypageFragment mypageFragment = new MypageFragment();
+    private MapFragment mapFragment = new MapFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //moveToBoard();
-        //moveToMypage();
-        //moveToReview();
-        //moveToSearch();
 
         setTabFragment();
 
-        //민승-이하 주석들 Fragment로 이동 및 수정
-        //지영추가
-        //AddDrama();
 
-        /*
-        //리사이클러뷰 추가-지영
-        recyclerView = (RecyclerView) findViewById(R.id.rv_item_main_record);
-        //그리드 컬럼추가 - 4, 한줄에 4개 표시되게함
-        int numberofColumns = 4;
-        mGridLayoutManager = new GridLayoutManager(this,numberofColumns);
-        recyclerView.setLayoutManager(mGridLayoutManager);
-
-        arrayList = new ArrayList<>();
-
-        //어댑터 생성 arraylist추가
-        mainAdapter = new MainAdapter(arrayList);
-        recyclerView.setAdapter(mainAdapter);
-
-         */
-
-        //버튼클릭시 리사이클러뷰 리뷰추가  - 임시로 연결
-//        Button review_add = (Button)findViewById(R.id.review_add);
-        //      review_add.setOnClickListener(new View.OnClickListener() {
-        //        @Override
-//            public void onClick(View v) {
-
-        //메인데이터 가져옴- dramaname, int image
-        // MainRecordData mainData = new MainRecordData("봄밤",R.drawable.img_thumbnail);
-        //메인데이터에 어레이리스트 추가
-        //arrayList.add(mainData);
-        //새로고침 될것
-        //mainAdapter.notifyDataSetChanged();
-        //          }
-        //    });
+        checkDangerousPermissions();
 
     }
 
@@ -111,6 +75,10 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     }
                     case R.id.navigation_menu3: {
+                        transaction.replace(R.id.frame_layout, mapFragment).commitAllowingStateLoss();
+                        break;
+                    }
+                    case R.id.navigation_menu4: {
                         transaction.replace(R.id.frame_layout, mypageFragment).commitAllowingStateLoss();
                         break;
                     }
@@ -202,6 +170,48 @@ public class MainActivity extends AppCompatActivity {
             finish();
         }
     }
+
+    private void checkDangerousPermissions(){
+        String[] permissions = {
+                Manifest.permission.INTERNET,
+                Manifest.permission.READ_EXTERNAL_STORAGE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+        };
+
+        int permissionCheck = PackageManager.PERMISSION_GRANTED;
+        for (int i=0; i<permissions.length; i++){
+            permissionCheck = ContextCompat.checkSelfPermission(this,permissions[i]);
+            if(permissionCheck == PackageManager.PERMISSION_DENIED){
+                break;
+            }
+
+        }
+
+        if (permissionCheck == PackageManager.PERMISSION_GRANTED){
+            Log.i("PERMISSION","권한 있음");
+        } else {
+            Log.i("PERMISSION","권한 없음");
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this,permissions[0])){
+                Toast.makeText(this, "권한 설명 필요함", Toast.LENGTH_LONG).show();
+            } else {
+                ActivityCompat.requestPermissions(this,permissions,1);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults){
+        if (requestCode ==1 ){
+            for (int i=0; i<permissions.length; i++){
+                if(grantResults[i] == PackageManager.PERMISSION_GRANTED){
+                    Log.i("PERMISSION",permissions[i]+"권한이 승인됨");
+                } else {
+                    Log.i("PERMISSION",permissions[i]+"권한이 승인되지 않음");
+                }
+            }
+        }
+    }
+
 
     /*
     //드라마 추가하기 버튼

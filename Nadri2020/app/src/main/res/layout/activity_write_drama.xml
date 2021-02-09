@@ -9,337 +9,247 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     tools:context=".WriteDramaActivity">
-
-    <!--상단바-->
     <RelativeLayout
-        android:id="@+id/write_act_bar_top"
         android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:background="#E4E4E4">
+        android:layout_height="wrap_content">
 
-        <!--버튼:뒤로 가기-->
+
+
+        <!--상단바-->
         <RelativeLayout
-            android:id="@+id/write_act_back_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="10dp"
-            android:padding="6dp">
+            android:id="@+id/write_act_bar_top"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#E4E4E4">
 
-            <ImageView
+            <!--버튼:뒤로 가기-->
+            <RelativeLayout
+                android:id="@+id/write_act_back_btn"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
-                android:paddingVertical="5dp"
-                android:src="@drawable/btn_undo_line" />
-
-        </RelativeLayout>
-
-        <!--로고-->
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/logo_top_main" />
-
-    </RelativeLayout>
-
-    <!--하단바-->
-    <RelativeLayout
-        android:id="@+id/main_act_bar_bottom"
-        android:layout_width="match_parent"
-        android:layout_height="56dp"
-        android:layout_alignParentBottom="true"
-        android:background="#E4E4E4">
-
-        <!--나의 기록-->
-        <RelativeLayout
-            android:id="@+id/main_act_record_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="30dp"
-            android:padding="6dp">
-
-            <TextView
-                style="@style/CustomeTextView_Color13dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:text="나의 기록" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="2dp">
-
-                <ImageView
-                    android:id="@+id/ic_bottom_home"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/ic_bottom_home" />
-
-            </RelativeLayout>
-
-        </RelativeLayout>
-
-        <!--톡 게시판-->
-        <RelativeLayout
-            android:id="@+id/main_act_board_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_centerInParent="true"
-            android:layout_centerVertical="true"
-            android:padding="6dp">
-
-            <TextView
-                style="@style/CustomeTextView_Color13dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:text="톡 게시판" />
-
-        </RelativeLayout>
-
-        <!--마이페이지-->
-        <RelativeLayout
-            android:id="@+id/main_act_mypage_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:layout_marginRight="26dp"
-            android:padding="6dp">
-
-            <TextView
-                style="@style/CustomeTextView_Color13dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
-                android:text="마이페이지" />
-
-            <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="2dp">
+                android:layout_marginLeft="10dp"
+                android:padding="6dp">
 
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
-                    android:src="@drawable/ic_bottom_user" />
+                    android:paddingVertical="5dp"
+                    android:src="@drawable/btn_undo_line" />
 
             </RelativeLayout>
+
+            <!--로고-->
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/logo_top_main" />
 
         </RelativeLayout>
 
-    </RelativeLayout>
-
-
-    <!--작성란-->
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/write_act_bar_top"
-        android:layout_marginHorizontal="16dp"
-        android:paddingTop="16dp">
-
+        <!--작성란-->
         <RelativeLayout
-            android:id="@+id/write_act_layout_box_big"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-            <Spinner
-                android:id="@+id/drama_num_spinner"
-                style="@style/CustomeTextView_Color15dp"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="30dp"
-                android:ems="10"
-                android:entries="@array/회차" />
-
-            <TextView
-                android:id="@+id/write_act_drama_num_text"
-                style="@style/CustomeTextView_Color15dp"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:text="n화" />
-
-
-            <!--
-            <Button
-                android:id="@+id/date_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="OnClickHandler"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="58dp"
-                android:text="날짜 입력 버튼" />
-                -->
-
-            <ImageView
-                android:layout_toRightOf="@id/write_act_drama_num_text"
-                android:id="@+id/date_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
-                android:paddingHorizontal="20dp"
-                android:onClick="OnClickHandler"
-                android:src="@drawable/ic_calendar" />
-
-            <TextView
-                android:layout_toRightOf="@+id/date_button"
-                android:id="@+id/write_act_date_pickup_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="날짜 정보" />
-
-
-            <!--시청 상태-->
-
+            android:layout_below="@+id/write_act_bar_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:paddingTop="16dp">
 
             <RelativeLayout
-                android:id="@+id/write_act_layout_box"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/drama_num_spinner"
-                android:layout_marginTop="10dp"
-                android:gravity="center">
+                android:id="@+id/write_act_layout_box_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                <ToggleButton
-                    android:id="@+id/write_act_watched_btn"
+                <Spinner
+                    android:id="@+id/drama_num_spinner"
+                    style="@style/CustomeTextView_Color15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="30dp"
+                    android:ems="10"
+                    android:entries="@array/회차" />
+
+                <TextView
+                    android:id="@+id/write_act_drama_num_text"
+                    style="@style/CustomeTextView_Color15dp"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:text="n화" />
+
+
+                <!--
+                <Button
+                    android:id="@+id/date_button"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:background="@drawable/watched_state_menu_drawable"
-                    android:src="@drawable/ic_boardview_watched"
-                    android:textOff=""
-                    android:textOn="" />
+                    android:layout_height="wrap_content"
+                    android:onClick="OnClickHandler"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="58dp"
+                    android:text="날짜 입력 버튼" />
+                    -->
 
-                <ToggleButton
-                    android:id="@+id/write_act_watching_btn"
+                <ImageView
+                    android:id="@+id/date_button"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@id/write_act_watched_btn"
-                    android:background="@drawable/watching_state_menu_drawable"
-                    android:src="@drawable/ic_boardview_watching"
-                    android:textOff=""
-                    android:textOn="" />
+                    android:layout_height="20dp"
+                    android:layout_alignParentTop="true"
+                    android:paddingHorizontal="8dp"
+                    android:layout_marginLeft="70dp"
+                    android:src="@drawable/ic_calendar" />
 
-                <ToggleButton
-                    android:id="@+id/write_act_unwatched_btn"
+                <TextView
+                    android:id="@+id/write_act_date_pickup_btn"
                     android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@id/write_act_watching_btn"
-                    android:background="@drawable/unwatched_state_menu_drawable"
-                    android:src="@drawable/ic_boardview_unwatched"
-                    android:textOff=""
-                    android:textOn="" />
-
-                <ToggleButton
-                    android:id="@+id/write_act_stop_btn"
-                    android:layout_width="wrap_content"
-                    android:layout_height="30dp"
-                    android:layout_marginLeft="2dp"
-                    android:layout_toRightOf="@id/write_act_unwatched_btn"
-                    android:background="@drawable/stop_state_menu_drawable"
-                    android:src="@drawable/ic_boardview_stop"
-                    android:textOff=""
-                    android:textOn="" />
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/date_button"
+                    android:text="날짜 정보" />
 
 
-            </RelativeLayout>
+                <!--시청 상태-->
 
-            <!--작성 칸-->
-            <RelativeLayout
-                android:id="@+id/write_act_comment_edittext"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/write_act_layout_box"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="80dp"
-                android:background="@drawable/custom_round_rectangle_stroke"
-                android:minHeight="200dp">
 
-                <EditText
-                    style="@style/CustomeTextView_Color13dp"
+                <RelativeLayout
+                    android:id="@+id/write_act_layout_box"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="@android:color/transparent"
-                    android:hint="리뷰 작성하기"
-                    android:paddingHorizontal="12dp"
-                    android:paddingVertical="10dp" />
+                    android:layout_below="@id/drama_num_spinner"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <ToggleButton
+                        android:id="@+id/write_act_watched_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+
+                        android:background="@drawable/watched_state_menu_drawable"
+                        android:src="@drawable/ic_boardview_watched"
+                        android:textOff=""
+                        android:textOn="" />
+
+                    <ToggleButton
+                        android:id="@+id/write_act_watching_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/write_act_watched_btn"
+                        android:background="@drawable/watching_state_menu_drawable"
+                        android:src="@drawable/ic_boardview_watching"
+                        android:textOff=""
+                        android:textOn="" />
+
+                    <ToggleButton
+                        android:id="@+id/write_act_unwatched_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/write_act_watching_btn"
+                        android:background="@drawable/unwatched_state_menu_drawable"
+                        android:src="@drawable/ic_boardview_unwatched"
+                        android:textOff=""
+                        android:textOn="" />
+
+                    <ToggleButton
+                        android:id="@+id/write_act_stop_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toRightOf="@id/write_act_unwatched_btn"
+                        android:background="@drawable/stop_state_menu_drawable"
+                        android:src="@drawable/ic_boardview_stop"
+                        android:textOff=""
+                        android:textOn="" />
+
+
+                </RelativeLayout>
+
+                <!--작성 칸-->
+                <RelativeLayout
+                    android:id="@+id/write_act_comment_edittext"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/write_act_layout_box"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="80dp"
+                    android:background="@drawable/custom_round_rectangle_stroke"
+                    android:minHeight="200dp">
+
+                    <EditText
+                        android:id="@+id/write_com"
+                        style="@style/CustomeTextView_Color13dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:hint="리뷰 작성하기"
+                        android:paddingHorizontal="12dp"
+                        android:paddingVertical="10dp" />
+
+                </RelativeLayout>
 
             </RelativeLayout>
+
+            <!--버튼:확인 취소-->
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/write_act_layout_box_big"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="20dp">
+
+
+                <!--취소-->
+                <RelativeLayout
+                    android:id="@+id/write_act_layout_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:paddingVertical="8dp">
+
+                    <Button
+                        android:id="@+id/write_act_no_btn"
+                        style="@style/CustomeTextView_Color13dp"
+                        android:layout_width="60dp"
+                        android:layout_height="43dp"
+                        android:background="@drawable/custom_round_rectangle_gray"
+                        android:gravity="center"
+                        android:text="취소"
+                        android:textColor="#FFFFFF" />
+
+                </RelativeLayout>
+
+
+                <!--확인-->
+                <RelativeLayout
+                    android:id="@+id/write_act_layout_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toRightOf="@+id/write_act_layout_no"
+                    android:paddingVertical="8dp">
+
+                    <Button
+                        android:id="@+id/write_act_yes_btn"
+                        style="@style/CustomeTextView_Color13dp"
+                        android:layout_width="60dp"
+                        android:layout_height="43dp"
+                        android:background="@drawable/custom_round_rectangle_accent"
+                        android:gravity="center"
+                        android:text="등록"
+                        android:textColor="#FFFFFF" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
 
         </RelativeLayout>
-
-        <!--버튼:확인 취소-->
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/write_act_layout_box_big"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="20dp">
-
-
-            <!--취소-->
-            <RelativeLayout
-                android:id="@+id/write_act_layout_no"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:paddingVertical="8dp">
-
-                <Button
-                    android:id="@+id/write_act_no_btn"
-                    style="@style/CustomeTextView_Color13dp"
-                    android:layout_width="60dp"
-                    android:layout_height="43dp"
-                    android:background="@drawable/custom_round_rectangle_gray"
-                    android:gravity="center"
-                    android:text="취소"
-                    android:textColor="#FFFFFF" />
-
-            </RelativeLayout>
-
-
-            <!--확인-->
-            <RelativeLayout
-                android:id="@+id/write_act_layout_yes"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_marginLeft="8dp"
-                android:layout_toRightOf="@+id/write_act_layout_no"
-                android:paddingVertical="8dp">
-
-                <Button
-                    android:id="@+id/write_act_yes_btn"
-                    style="@style/CustomeTextView_Color13dp"
-                    android:layout_width="60dp"
-                    android:layout_height="43dp"
-                    android:background="@drawable/custom_round_rectangle_accent"
-                    android:gravity="center"
-                    android:text="등록"
-                    android:textColor="#FFFFFF" />
-
-            </RelativeLayout>
-
-
-        </RelativeLayout>
-
 
     </RelativeLayout>
 

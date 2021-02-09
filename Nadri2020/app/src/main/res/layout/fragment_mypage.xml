@@ -21,4 +21,13 @@
 
     </RelativeLayout>
 
+
+    <fragment
+        android:id="@+id/frag_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        android:name="com.example.nadri2020.SettingFragment"/>
+
+
 </FrameLayout>

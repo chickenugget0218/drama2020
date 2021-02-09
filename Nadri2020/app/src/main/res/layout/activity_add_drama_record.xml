@@ -56,15 +56,26 @@
         tools:layout_editor_absoluteX="33dp"
         tools:layout_editor_absoluteY="91dp" />
 
-    <EditText
-        android:id="@+id/drama_genre"
-        android:layout_marginTop="20dp"
-        android:textSize="25dp"
-        android:layout_gravity="center"
+<LinearLayout
+    android:layout_marginTop="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/tv_genre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="장르를 입력하세요."
+        android:text="장르 : "
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/drama_genre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:spinnerMode="dropdown"
         />
+</LinearLayout>
 
     <Button
         android:id="@+id/add_gallery_btn"

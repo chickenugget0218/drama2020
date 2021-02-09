@@ -13,7 +13,7 @@ public class Review {
     private int watched;
     private String review;
     private String image;
-    private String gerne;
+    private String genre;
 
     public int get_id() {return _id;}
     public String getTitle(){ return title; }
@@ -22,7 +22,7 @@ public class Review {
     public int getWatched() {return watched;}
     public String getReview(){ return review;}
     public String getImage(){ return image;}
-    public String getGerne(){ return gerne;}
+    public String getGenre(){ return genre;}
 
     public void set_id(int _id){this._id = _id;}
     public void setTitle(String title){ this.title = title; }
@@ -30,7 +30,7 @@ public class Review {
     public void setNumber(String number) {this.number = number; }
     public void setWatched(int watched) {this.watched = watched;}
     public void setReview(String review){ this.review = review;}
+    public void setGenre(String genre) {this.genre = genre;}
     public void setImage(String image){ this.image = image;}
-    public void setGerne(){ this.gerne= gerne;}
 
 }

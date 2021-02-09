@@ -178,7 +178,7 @@
                 android:minHeight="200dp">
 
                 <EditText
-                    android:id="@+id/comment_wrt"
+                    android:id="@+id/write_com"
                     style="@style/CustomeTextView_Color13dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

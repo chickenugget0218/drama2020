@@ -4,11 +4,11 @@ import android.net.Uri;
 
 public class RvRecordItem {
     //날짜 제목 내용 화수 item내용들
-    private String rv_date;
-    private String rv_drama;
-    private String rv_text;
-    private String rv_num;
-    private Uri rv_image; //이미지 일단 임시로
+    String rv_date;
+    String rv_drama;
+    String rv_text;
+    String rv_num;
+    Uri rv_image; //이미지 일단 임시로
 
     public RvRecordItem(String date, String drama, String text, String num, Uri image){
         this.rv_date = date;

@@ -1,7 +1,6 @@
 package com.example.nadri2020;
 
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -14,17 +13,12 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.RelativeLayout;
-import android.widget.ScrollView;
-
-import com.example.nadri2020.data.MainRecordData;
 
 import java.util.ArrayList;
 
 public class BoardFragment extends Fragment {
 
-    private ArrayList<MainRecordData> arrayList;
+    private ArrayList<MainRecordItem> arrayList;
     private MainAdapter mainAdapter;
     private RecyclerView recyclerView;//그리드형식으로 표시
     private GridLayoutManager mGridLayoutManager;
@@ -69,11 +63,8 @@ public class BoardFragment extends Fragment {
         Log.d("2탭 어댑터 체크","2탭 어댑터 체크");
 
         //어댑터 생성 arraylist추가
-        mainAdapter = new MainAdapter(arrayList);
+        //mainAdapter = new MainAdapter(arrayList); 에러남
         recyclerView.setAdapter(mainAdapter);
-
-
-
 
         return rootview;
     }

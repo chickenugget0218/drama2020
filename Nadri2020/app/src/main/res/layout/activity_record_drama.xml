@@ -165,11 +165,12 @@
         android:layout_height="150dp"
         android:layout_below="@id/record_act_bar_top">
 
+        <!-- scaleType:fitCenter centerCrop-->
         <ImageView
             android:id="@+id/record_act_drama_img"
             android:layout_width="400dp"
             android:layout_centerHorizontal="true"
-            android:scaleType="fitCenter"
+            android:scaleType="centerCrop"
             android:layout_height="150dp"
             android:src="@drawable/img_recordview_drama" />
 

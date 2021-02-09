@@ -1,10 +1,12 @@
 package com.example.nadri2020;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -59,6 +61,7 @@ public class RecordAdapter extends RecyclerView.Adapter<RecordAdapter.ViewHolder
         TextView date;
         TextView num;
         ImageView iv;
+        ImageButton share;
 
         public ViewHolder(View itemView){
             super(itemView);
@@ -69,9 +72,12 @@ public class RecordAdapter extends RecyclerView.Adapter<RecordAdapter.ViewHolder
             text = itemView.findViewById(R.id.rv_drama_text);
             date = itemView.findViewById(R.id.rv_drama_date);
             num = itemView.findViewById(R.id.rv_drama_num);
+            share = itemView.findViewById(R.id.btn_share);
+
+
 
         }
-    }
 
+    }
 
 }

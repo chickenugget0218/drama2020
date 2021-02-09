@@ -33,4 +33,26 @@
         <item>30화</item>
         <item>31화</item>
     </string-array>
+
+    <string-array name="genre">
+        <item>가족</item>
+        <item>공포</item>
+        <item>로맨스</item>
+        <item>로맨틱코미디</item>
+        <item>멜로</item>
+        <item>미스터리</item>
+        <item>법정</item>
+        <item>범죄/수사</item>
+        <item>복수</item>
+        <item>사극</item>
+        <item>성장</item>
+        <item>액션</item>
+        <item>의학</item>
+        <item>정치</item>
+        <item>청춘</item>
+        <item>코미디</item>
+        <item>판타지</item>
+        <item>학교/학원물</item>
+        <item>기타</item>
+    </string-array>
 </resources>

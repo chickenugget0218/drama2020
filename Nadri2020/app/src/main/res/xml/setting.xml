@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:title="계정">
+
+        <EditTextPreference
+            android:key="nickName"
+            android:title="닉네임"
+            android:summary="닉네임을 설정하세요."/>
+
+        <!-- Single Choice : RadioButton -->
+        <PreferenceScreen
+            android:key="logout"
+            android:title="로그아웃"
+            />
+
+    </PreferenceCategory>
+    <!-- entries : 리스트에 표시되는 항목글씨-->
+    <!-- entryValues : 파일에 저장되는 값 -->
+
+    <PreferenceCategory
+        android:title="\n백업/복구">    <!-- Multiple Choice : Checkbox-->
+        <PreferenceScreen
+            android:title="백업">
+
+            <PreferenceScreen
+                android:key="backup"
+                android:title="백업하기"
+                android:summary="생성된 백업 파일을 메신저, 이메일, 클라우드 등으로 파일을 보내주세요."
+                />
+
+        </PreferenceScreen>
+
+        <PreferenceScreen
+            android:key="restore"
+            android:title="복구"
+            />
+    </PreferenceCategory>
+
+    <!-- 카테고리 구분 형태-->
+    <PreferenceCategory
+        android:title="\n앱 정보">
+
+        <PreferenceScreen
+            android:key="app_version"
+            android:title="앱\n버전"
+            android:summary="0.0.1"
+            />
+
+        <!-- 다른 설정값에 따라 활성화여부 -->
+        <PreferenceScreen
+            android:key="customer_inquiry"
+            android:title="고객문의"
+            android:summary="문의사항을 이메일로 보낼 수 있습니다."
+            />
+
+
+    </PreferenceCategory>
+
+
+
+
+
+</PreferenceScreen>

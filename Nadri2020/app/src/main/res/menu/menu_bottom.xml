@@ -14,6 +14,11 @@
     <item
         android:id="@+id/navigation_menu3"
         android:icon="@drawable/ic_bottom_user"
+        android:title="드라마 촬영지" />
+
+    <item
+        android:id="@+id/navigation_menu4"
+        android:icon="@drawable/ic_bottom_user"
         android:title="마이페이지" />
 
 </menu>
