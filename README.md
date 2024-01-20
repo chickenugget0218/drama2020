@@ -11,7 +11,7 @@
 
 ## 핵심 기능
 - 기능명세서
-
+![기능명세서](https://github.com/chickenugget0218/drama2020/assets/52038435/91703212-2f73-4ffc-84f4-ee1f64de175d)
 
 
 ## Data
